@@ -11,6 +11,10 @@ const Notes = () => {
     setNotesData((prevNotes) => [...prevNotes, data]);
   };
 
+  const deleteNotes = (id) => {
+    setNotesData(notesData.filter((data) => data.id !== id));
+  };
+
   return (
     <>
       {showAddnNotes && (
@@ -29,7 +33,7 @@ const Notes = () => {
 
         <div className="notes-wrapper">
           {notesData.map((note, index) => (
-            <NotesItem key={index} note={note} />
+            <NotesItem key={index} note={note} deleteNotes={deleteNotes} />
           ))}
         </div>
       </section>

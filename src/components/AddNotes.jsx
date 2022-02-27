@@ -13,8 +13,9 @@ const AddNotes = ({ setShowAddNotes, getNotesData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && text) {
-      console.log({ title, text });
-      getNotesData({ title, text });
+      const id = Date.now();
+      console.log({ id, title, text });
+      getNotesData({ id, title, text });
 
       setText("");
       setTitle("");

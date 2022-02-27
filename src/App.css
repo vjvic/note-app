@@ -62,6 +62,9 @@ body {
   height: 250px;
   overflow-x: hidden;
   word-break: break-all;
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .note-title {
@@ -70,6 +73,16 @@ body {
 
 .note-body {
   opacity: 0.9;
+}
+
+.delete-note {
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #808080;
 }
 
 .backdrop {
