@@ -75,11 +75,14 @@ body {
   opacity: 0.9;
 }
 
-.delete-note {
-  cursor: pointer;
+.note-actions {
   position: absolute;
   bottom: 5px;
   right: 0;
+}
+
+.note-actions button {
+  cursor: pointer;
   background: none;
   border: none;
   color: #808080;
